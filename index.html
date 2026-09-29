@@ -1,185 +1,313 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>O Coven Medieval — Halloween da Fêh</title>
+<title>O Coven Medieval — III Halloween da Fêh</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
 
-        body {
-            background: #120d13;
-            color: #e8dcc8;
-            font-family: Georgia, "Times New Roman", serif;
-            line-height: 1.7;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .container {
-            width: 90%;
-            max-width: 850px;
-            margin: auto;
-        }
+html {
+    scroll-behavior: smooth;
+}
 
-        section {
-            padding: 70px 0;
-            border-bottom: 1px solid rgba(232, 220, 200, 0.15);
-        }
+body {
+    background:
+        radial-gradient(circle at 20% 10%, rgba(126, 75, 45, .18), transparent 30%),
+        radial-gradient(circle at 80% 90%, rgba(78, 38, 73, .20), transparent 35%),
+        #e7d2aa;
 
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            background:
-                radial-gradient(circle at center,
-                rgba(82, 40, 92, 0.35),
-                transparent 55%),
-                #120d13;
-        }
+    color: #35251d;
 
-        .symbol {
-            font-size: 55px;
-            margin-bottom: 20px;
-        }
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-        .edition {
-            font-size: 14px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: #b99a61;
-            margin-bottom: 20px;
-        }
+    line-height: 1.7;
+}
 
-        h1 {
-            font-size: clamp(38px, 8vw, 72px);
-            font-weight: normal;
-            color: #d8c19a;
-            margin-bottom: 20px;
-        }
 
-        h2 {
-            font-size: 30px;
-            font-weight: normal;
-            color: #d8c19a;
-            margin-bottom: 25px;
-        }
+/* =========================
+   FUNDO DE PERGAMINHO
+========================= */
 
-        .subtitle {
-            font-size: 18px;
-            font-style: italic;
-            color: #c7b7a0;
-            max-width: 650px;
-            margin: auto;
-        }
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
 
-        .date {
-            margin-top: 35px;
-            font-size: 18px;
-            letter-spacing: 2px;
-        }
+    pointer-events: none;
 
-        .gold {
-            color: #b99a61;
-        }
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(80, 50, 25, .025),
+            rgba(80, 50, 25, .025) 2px,
+            transparent 2px,
+            transparent 5px
+        );
 
-        .text {
-            max-width: 700px;
-            margin: auto;
-            text-align: center;
-            font-size: 17px;
-        }
+    z-index: 10;
+}
 
-        .card {
-            border: 1px solid rgba(185, 154, 97, 0.45);
-            padding: 30px;
-            margin-top: 30px;
-            background: rgba(255,255,255,0.025);
-        }
 
-        .info {
-            display: grid;
-            gap: 15px;
-            margin-top: 30px;
-        }
+/* =========================
+   CONTAINER
+========================= */
 
-        .info div {
-            padding: 18px;
-            border-left: 2px solid #b99a61;
-            background: rgba(255,255,255,0.025);
-        }
+.container {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+}
 
-        .dress-code {
-            margin-top: 30px;
-            font-size: 18px;
-        }
 
-        .dress-code span {
-            display: inline-block;
-            margin: 6px;
-            padding: 8px 14px;
-            border: 1px solid rgba(185,154,97,0.5);
-        }
+/* =========================
+   SEÇÕES
+========================= */
 
-        .rules {
-            list-style: none;
-            margin-top: 25px;
-        }
+section {
+    padding: 75px 0;
+    position: relative;
+}
 
-        .rules li {
-            margin: 15px 0;
-            padding-left: 25px;
-        }
 
-        .rules li::before {
-            content: "✦";
-            color: #b99a61;
-            margin-right: 10px;
-        }
+/* =========================
+   ABERTURA
+========================= */
 
-        #countdown {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin-top: 35px;
-        }
+.hero {
+    min-height: 100vh;
 
-        .time-box {
-            padding: 20px 10px;
-            border: 1px solid rgba(185,154,97,0.4);
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        .time-box strong {
-            display: block;
-            font-size: 30px;
-            color: #d8c19a;
-        }
+    text-align: center;
 
-        .time-box small {
-            color: #a99b88;
-        }
+    background:
+        linear-gradient(
+            rgba(231, 210, 170, .82),
+            rgba(231, 210, 170, .92)
+        );
 
-        .button {
-            display: inline-block;
-            margin-top: 30px;
-            padding: 14px 28px;
-            border: 1px solid #b99a61;
-            color: #d8c19a;
-            text-decoration: none;
-            transition: 0.3s;
-        }
+    border-bottom:
+        8px double #6b3b38;
+}
 
-        .button:hover {
-            background: #b99a61;
-            color: #120d13;
-        }
+.hero-content {
+    padding: 45px 25px;
 
-        footer {
-            text-align: center;
-            paddin
+    border:
+        2px solid #765039;
+
+    outline:
+        1px solid #765039;
+
+    outline-offset: 8px;
+
+    box-shadow:
+        0 0 30px rgba(80, 45, 25, .20);
+}
+
+
+.symbol {
+    font-size: 48px;
+    color: #592d4e;
+
+    margin-bottom: 15px;
+}
+
+
+.edition {
+    font-size: 13px;
+
+    letter-spacing: 5px;
+
+    text-transform: uppercase;
+
+    color: #79502d;
+
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    font-size: clamp(42px, 9vw, 76px);
+
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    color: #542d48;
+
+    margin-bottom: 25px;
+}
+
+
+.subtitle {
+    font-size: 19px;
+
+    font-style: italic;
+
+    color: #50372d;
+
+    max-width: 650px;
+
+    margin: auto;
+}
+
+
+.date {
+    margin-top: 35px;
+
+    font-size: 19px;
+
+    letter-spacing: 2px;
+}
+
+
+.gold {
+    color: #765024;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h2 {
+    text-align: center;
+
+    font-size: 34px;
+
+    font-weight: normal;
+
+    color: #592d4e;
+
+    margin-bottom: 35px;
+}
+
+h2::before {
+    content: "☾  ✦  ☽";
+
+    display: block;
+
+    font-size: 20px;
+
+    color: #79502d;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.text {
+    max-width: 700px;
+
+    margin: auto;
+
+    text-align: center;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+    max-width: 700px;
+
+    margin: 30px auto 0;
+
+    padding: 30px;
+
+    background:
+        rgba(255, 247, 226, .55);
+
+    border:
+        1px solid #8b6745;
+
+    box-shadow:
+        0 8px 20px rgba(70, 40, 20, .12);
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.info {
+    display: grid;
+
+    gap: 15px;
+}
+
+
+.info div {
+    padding: 18px;
+
+    background:
+        rgba(255, 250, 235, .55);
+
+    border-left:
+        4px solid #6b3b38;
+}
+
+
+.info strong {
+    color: #592d4e;
+}
+
+
+/* =========================
+   DRESS CODE
+========================= */
+
+.dress-code {
+    max-width: 700px;
+
+    margin: 35px auto 0;
+
+    text-align: center;
+}
+
+
+.dress-code span {
+    display: inline-block;
+
+    margin: 6px;
+
+    padding: 9px 15px;
+
+    border:
+        1px solid #806043;
+
+    background:
+        rgba(255, 247, 226, .45);
+
+    color: #50352c;
+}
+
+
+/* =========================
+   REGRAS
+========================= */
+
+.rules {
+    ma
