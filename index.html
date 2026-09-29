@@ -2,318 +2,708 @@
 <html lang="pt-BR">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
+    <title>O Coven Medieval - III Halloween da Fêh</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
 
-<title>O Coven Medieval - III Halloween da Fêh</title>
+        body {
+            margin: 0;
+            background: #e6d0a5;
+            color: #35251d;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+        }
 
-<style>
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
 
-body {
-    margin: 0;
-    background: #e6d0a5;
-    color: #35251d;
-    font-family: Georgia, "Times New Roman", serif;
-    line-height: 1.7;
-}
+        /* CAPA */
 
-.container {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-}
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-}
+        .hero-box {
+            width: 100%;
+            padding: 50px 25px;
+            box-sizing: border-box;
+            background: #ead9b8;
+            border: 3px double #70403b;
+            box-shadow: 0 10px 30px rgba(50, 30, 20, 0.2);
+        }
 
-.hero-box {
-    width: 100%;
-    padding: 50px 25px;
-    background: #ead9b8;
-    border: 3px double #70403b;
-    box-shadow: 0 10px 30px rgba(50, 30, 20, 0.2);
-}
+        .symbol {
+            color: #62364f;
+            font-size: 40px;
+            letter-spacing: 8px;
+        }
 
-.symbol {
-    color: #62364f;
-    font-size: 40px;
-    letter-spacing: 8px;
-}
+        .edition {
+            color: #704b2c;
+            font-size: 13px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
 
-.edition {
-    color: #704b2c;
-    font-size: 13px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-}
+        h1 {
+            color: #542c49;
+            font-size: 55px;
+            font-weight: normal;
+            line-height: 1.1;
+            margin: 20px 0;
+        }
 
-h1 {
-    color: #542c49;
-    font-size: 55px;
-    font-weight: normal;
-    line-height: 1.1;
-    margin: 20px 0;
-}
+        h2 {
+            color: #5c304e;
+            text-align: center;
+            font-size: 32px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
 
-h2 {
-    color: #5c304e;
-    text-align: center;
-    font-size: 32px;
-    font-weight: normal;
-    margin-bottom: 30px;
-}
+        .subtitle {
+            font-size: 18px;
+            font-style: italic;
+        }
 
-.subtitle {
-    font-size: 18px;
-    font-style: italic;
-}
+        .date {
+            color: #704b2c;
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
 
-.date {
-    color: #704b2c;
-    font-size: 19px;
-    font-weight: bold;
-    margin-top: 30px;
-}
+        .gold {
+            color: #704b24;
+            font-weight: bold;
+        }
 
-section {
-    padding: 70px 0;
-    border-top: 1px solid #806040;
-}
+        /* SEÇÕES */
 
-.text {
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 17px;
-}
+        section {
+            padding: 70px 0;
+            border-top: 1px solid #806040;
+        }
 
-.gold {
-    color: #704b24;
-    font-weight: bold;
-}
+        .text {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 17px;
+        }
 
-.card {
-    max-width: 700px;
-    margin: 25px auto;
-    padding: 25px;
-    background: #f1e4c8;
-    border: 1px solid #806040;
-}
+        /* CARDS */
 
-.info {
-    padding: 15px;
-    margin: 12px 0;
-    background: #f8eed8;
-    border-left: 4px solid #683944;
-}
+        .card {
+            max-width: 700px;
+            margin: 25px auto;
+            padding: 25px;
+            box-sizing: border-box;
+            background: #f1e4c8;
+            border: 1px solid #806040;
+        }
 
-.info strong {
-    color: #5c304e;
-}
+        .info {
+            padding: 15px;
+            margin: 12px 0;
+            background: #f8eed8;
+            border-left: 4px solid #683944;
+        }
 
-.dress {
-    text-align: center;
-    margin-top: 30px;
-}
+        .info strong {
+            color: #5c304e;
+        }
 
-.dress span {
-    display: inline-block;
-    padding: 8px 14px;
-    margin: 5px;
-    border: 1px solid #806040;
-    background: #f1e4c8;
-}
+        /* DRESS CODE */
 
-.rule {
-    max-width: 700px;
-    margin: 15px auto;
-    padding: 15px;
-    background: #f1e4c8;
-    border-left: 3px solid #683944;
-}
+        .dress {
+            text-align: center;
+            margin-top: 30px;
+        }
 
-#countdown {
-    max-width: 700px;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
+        .dress span {
+            display: inline-block;
+            padding: 8px 14px;
+            margin: 5px;
+            border: 1px solid #806040;
+            background: #f1e4c8;
+        }
 
-.time {
-    text-align: center;
-    padding: 18px 5px;
-    background: #f1e4c8;
-    border: 1px solid #806040;
-}
+        /* REGRAS */
 
-.time strong {
-    display: block;
-    color: #5c304e;
-    font-size: 28px;
-}
+        .rule {
+            max-width: 700px;
+            margin: 15px auto;
+            padding: 15px;
+            box-sizing: border-box;
+            background: #f1e4c8;
+            border-left: 3px solid #683944;
+        }
 
-.button {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 25px;
-    background: #5c304e;
-    color: #f3dfb8;
-    text-decoration: none;
-}
+        /* CONTADOR */
 
-footer {
-    padding: 50px 20px;
-    text-align: center;
-    background: #5a303d;
-    color: #ead7b0;
-}
+        #countdown {
+            max-width: 700px;
+            margin: 30px auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
 
-footer p {
-    color: #ead7b0;
-}
+        .time {
+            text-align: center;
+            padding: 18px 5px;
+            background: #f1e4c8;
+            border: 1px solid #806040;
+        }
 
-@media (max-width: 600px) {
+        .time strong {
+            display: block;
+            color: #5c304e;
+            font-size: 28px;
+        }
 
-    h1 {
-        font-size: 42px;
-    }
+        /* BOTÃO */
 
-    h2 {
-        font-size: 28px;
-    }
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 25px;
+            background: #5c304e;
+            color: #f3dfb8;
+            text-decoration: none;
+        }
 
-    .text {
-        font-size: 16px;
-    }
+        /* RODAPÉ */
 
-    #countdown {
-        grid-template-columns: repeat(2, 1fr);
-    }
+        footer {
+            padding: 50px 20px;
+            text-align: center;
+            background: #5a303d;
+            color: #ead7b0;
+        }
 
-}
+        footer p {
+            color: #ead7b0;
+        }
 
-</style>
+        /* CELULAR */
 
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 42px;
+            }
+
+            h2 {
+                font-size: 28px;
+            }
+
+            .text {
+                font-size: 16px;
+            }
+
+            #countdown {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+    </style>
 </head>
 
 
 <body>
 
+    <!-- CAPA -->
 
-<section class="hero">
+    <section class="hero">
 
-<div class="container">
+        <div class="container">
 
-<div class="hero-box">
+            <div class="hero-box">
 
-<div class="symbol">
-☽ ✦ ☾
-</div>
+                <div class="symbol">
+                    ☽ ✦ ☾
+                </div>
 
-<div class="edition">
-III Halloween da Fêh
-</div>
+                <div class="edition">
+                    III Halloween da Fêh
+                </div>
 
-<h1>
-O Coven<br>
-Medieval
-</h1>
+                <h1>
+                    O Coven<br>
+                    Medieval
+                </h1>
 
-<p class="subtitle">
-Uma noite de bruxaria, lendas e rituais proibidos.
-</p>
+                <p class="subtitle">
+                    Uma noite de bruxaria, lendas e rituais proibidos.
+                </p>
 
-<p class="date">
-07 de novembro de 2026
-<br>
-19h às 00h
-</p>
+                <p class="date">
+                    07 de novembro de 2026<br>
+                    19h às 00h
+                </p>
 
-<p class="gold">
-─── ✦ ───
-</p>
+                <p class="gold">
+                    ─── ✦ ───
+                </p>
 
-<p>
-O chamado foi lançado.
-</p>
+                <p>
+                    O chamado foi lançado.
+                </p>
 
-</div>
+            </div>
 
-</div>
+        </div>
 
-</section>
-
-
-<section>
-
-<div class="container">
-
-<h2>
-O Chamado
-</h2>
-
-<div class="text">
-
-<p>
-Há uma noite em que as portas se abrem,
-os antigos rituais despertam e as bruxas
-deixam a floresta.
-</p>
-
-<p>
-Uma noite em que feiticeiros,
-alquimistas, caçadores e criaturas
-caminham entre os vivos.
-</p>
-
-<p class="gold">
-O Coven está reunido.
-</p>
-
-</div>
-
-</div>
-
-</section>
+    </section>
 
 
-<section>
+    <!-- O CHAMADO -->
 
-<div class="container">
+    <section>
 
-<h2>
-O Ritual
-</h2>
+        <div class="container">
 
-<div class="card">
+            <h2>
+                O Chamado
+            </h2>
 
-<div class="info">
+            <div class="text">
 
-<strong>
-☾ DATA
-</strong>
+                <p>
+                    Há uma noite em que as portas se abrem,
+                    os antigos rituais despertam e as bruxas
+                    deixam a floresta.
+                </p>
 
-07 de novembro de 2026
+                <p>
+                    Uma noite em que feiticeiros, alquimistas,
+                    caçadores e nobres caminham entre os vivos.
+                </p>
 
-</div>
+                <p class="gold">
+                    O Coven está reunido.
+                </p>
 
-<div class="info">
+            </div>
 
-<strong>
-⌛ HORÁRIO
-</strong>
+        </div>
 
-19h às 00h
+    </section>
 
-</div>
 
-<di
+    <!-- O RITUAL -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                O Ritual
+            </h2>
+
+            <div class="card">
+
+                <div class="info">
+
+                    <strong>
+                        ☾ DATA
+                    </strong>
+
+                    <br>
+
+                    07 de novembro de 2026
+
+                </div>
+
+
+                <div class="info">
+
+                    <strong>
+                        ⌛ HORÁRIO
+                    </strong>
+
+                    <br>
+
+                    19h às 00h
+
+                </div>
+
+
+                <div class="info">
+
+                    <strong>
+                        ✦ LOCAL
+                    </strong>
+
+                    <br>
+
+                    Residencial Soft São Luís, 155
+
+                    <br>
+
+                    Salão 2
+
+                </div>
+
+
+                <div class="info">
+
+                    <strong>
+                        🍽️ BANQUETE
+                    </strong>
+
+                    <br>
+
+                    A comida está inclusa no ingresso.
+
+                </div>
+
+
+                <div class="info">
+
+                    <strong>
+                        🥂 BEBIDAS
+                    </strong>
+
+                    <br>
+
+                    Cada convidado deverá trazer suas próprias bebidas.
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- O COVEN -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                O Coven
+            </h2>
+
+            <div class="text">
+
+                <p>
+                    Escolha sua forma.
+                </p>
+
+                <p>
+                    Vista sua personagem.
+                </p>
+
+                <p>
+                    Entre no Coven.
+                </p>
+
+            </div>
+
+
+            <div class="dress">
+
+                <span>
+                    🧙 Bruxas
+                </span>
+
+                <span>
+                    🔮 Feiticeiros
+                </span>
+
+                <span>
+                    ⚗️ Alquimistas
+                </span>
+
+                <span>
+                    🏹 Caçadores
+                </span>
+
+                <span>
+                    👑 Nobres
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- O BANQUETE -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                O Banquete
+            </h2>
+
+            <div class="text">
+
+                <p>
+                    🍽️
+                </p>
+
+                <p>
+                    <strong>
+                        A comida está inclusa no ingresso.
+                    </strong>
+                </p>
+
+                <p>
+                    Para acompanhar o banquete,
+                    cada convidado deverá trazer
+                    suas próprias bebidas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTAGEM REGRESSIVA -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                O Tempo Está Correndo
+            </h2>
+
+
+            <div id="countdown">
+
+                <div class="time">
+
+                    <strong id="days">
+                        00
+                    </strong>
+
+                    <small>
+                        dias
+                    </small>
+
+                </div>
+
+
+                <div class="time">
+
+                    <strong id="hours">
+                        00
+                    </strong>
+
+                    <small>
+                        horas
+                    </small>
+
+                </div>
+
+
+                <div class="time">
+
+                    <strong id="minutes">
+                        00
+                    </strong>
+
+                    <small>
+                        minutos
+                    </small>
+
+                </div>
+
+
+                <div class="time">
+
+                    <strong id="seconds">
+                        00
+                    </strong>
+
+                    <small>
+                        segundos
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <p class="text">
+
+                Até que as portas do Coven sejam abertas...
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONFIRMAÇÃO -->
+
+    <section>
+
+        <div class="container">
+
+            <h2>
+                Você Aceitará o Chamado?
+            </h2>
+
+            <div class="text">
+
+                <p>
+                    O Coven precisa saber quem estará presente.
+                </p>
+
+                <p class="gold">
+                    Confirmação até 10/10/2026.
+                </p>
+
+                <a
+                    href="#"
+                    class="button">
+                    ✦ Confirmar Presença ✦
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <p>
+            ☽ ✦ ☾
+        </p>
+
+        <p>
+            III Halloween da Fêh
+        </p>
+
+        <p>
+            <strong>
+                O Coven Medieval
+            </strong>
+        </p>
+
+        <p>
+            A magia começa às 19h.
+        </p>
+
+    </footer>
+
+
+    <!-- CONTADOR -->
+
+    <script>
+
+        var dataFesta =
+            new Date("2026-11-07T19:00:00-03:00").getTime();
+
+
+        function contador() {
+
+            var agora =
+                new Date().getTime();
+
+            var distancia =
+                dataFesta - agora;
+
+
+            if (distancia <= 0) {
+
+                document.getElementById("days").innerHTML = "00";
+                document.getElementById("hours").innerHTML = "00";
+                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById("seconds").innerHTML = "00";
+
+                return;
+
+            }
+
+
+            var dias =
+                Math.floor(
+                    distancia /
+                    (1000 * 60 * 60 * 24)
+                );
+
+
+            var horas =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60 * 60 * 24))
+                    /
+                    (1000 * 60 * 60)
+                );
+
+
+            var minutos =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60 * 60))
+                    /
+                    (1000 * 60)
+                );
+
+
+            var segundos =
+                Math.floor(
+                    (distancia %
+                    (1000 * 60))
+                    /
+                    1000
+                );
+
+
+            document.getElementById("days").innerHTML =
+                dias;
+
+            document.getElementById("hours").innerHTML =
+                horas;
+
+            document.getElementById("minutes").innerHTML =
+                minutos;
+
+            document.getElementById("seconds").innerHTML =
+                segundos;
+
+        }
+
+
+        contador();
+
+        setInterval(contador, 1000);
+
+    </script>
+
+</body>
+
+</html>
