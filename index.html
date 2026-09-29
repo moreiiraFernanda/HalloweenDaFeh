@@ -12,15 +12,24 @@
         O Coven Medieval - III Halloween da Fêh
     </title>
 
+
     <style>
 
         * {
             box-sizing: border-box;
         }
 
+
         html {
             scroll-behavior: smooth;
         }
+
+
+        /*
+        ==========================================
+        FUNDO DO PERGAMINHO
+        ==========================================
+        */
 
         body {
 
@@ -35,63 +44,19 @@
 
             line-height: 1.45;
 
-            background-color: #8d6b3f;
-
-            /*
-            ==========================================
-            FUNDO — PERGAMINHO ENVELHECIDO
-            ==========================================
-            */
+            background-color: #b79a68;
 
             background-image:
+                url("pergaminho.jpg");
 
-                radial-gradient(
-                    ellipse at 0% 0%,
-                    rgba(42, 22, 10, 0.70) 0%,
-                    rgba(65, 35, 14, 0.45) 5%,
-                    transparent 19%
-                ),
+            background-size: cover;
 
-                radial-gradient(
-                    ellipse at 100% 0%,
-                    rgba(42, 22, 10, 0.68) 0%,
-                    rgba(65, 35, 14, 0.42) 5%,
-                    transparent 19%
-                ),
+            background-position: center top;
 
-                radial-gradient(
-                    ellipse at 0% 100%,
-                    rgba(42, 22, 10, 0.72) 0%,
-                    rgba(65, 35, 14, 0.45) 6%,
-                    transparent 20%
-                ),
+            background-repeat: no-repeat;
 
-                radial-gradient(
-                    ellipse at 100% 100%,
-                    rgba(42, 22, 10, 0.72) 0%,
-                    rgba(65, 35, 14, 0.45) 6%,
-                    transparent 20%
-                ),
+            background-attachment: scroll;
 
-                radial-gradient(
-                    ellipse at 0% 50%,
-                    rgba(55, 29, 12, 0.48),
-                    transparent 17%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 50%,
-                    rgba(55, 29, 12, 0.48),
-                    transparent 17%
-                ),
-
-                repeating-linear-gradient(
-                    7deg,
-                    rgba(65, 35, 15, 0.045) 0px,
-                    rgba(65, 35, 15, 0.045) 1px,
-                    transparent 1px,
-                    transparent 5px
-                );
         }
 
 
@@ -126,66 +91,14 @@
 
             padding: 25px;
 
-            background-color: #bda06b;
-
-            background-image:
-
-                radial-gradient(
-                    ellipse at 50% 50%,
-                    rgba(255, 239, 195, 0.25),
-                    transparent 50%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 0%,
-                    rgba(47, 25, 11, 0.65),
-                    transparent 27%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 0%,
-                    rgba(47, 25, 11, 0.60),
-                    transparent 26%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 100%,
-                    rgba(47, 25, 11, 0.65),
-                    transparent 28%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 100%,
-                    rgba(47, 25, 11, 0.65),
-                    transparent 28%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 35%,
-                    rgba(70, 37, 14, 0.35),
-                    transparent 18%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 65%,
-                    rgba(70, 37, 14, 0.35),
-                    transparent 18%
-                ),
-
-                repeating-linear-gradient(
-                    12deg,
-                    rgba(70, 40, 20, 0.045) 0px,
-                    rgba(70, 40, 20, 0.045) 1px,
-                    transparent 1px,
-                    transparent 4px
-                );
+            background: transparent;
 
         }
 
 
         /*
         ==========================================
-        PAPEL CENTRAL DA CAPA
+        ÁREA PRINCIPAL DA CAPA
         ==========================================
         */
 
@@ -195,45 +108,22 @@
 
             padding: 48px 25px;
 
-            background-color: #e0c793;
-
-            background-image:
-
-                radial-gradient(
-                    ellipse at 15% 20%,
-                    rgba(255, 245, 210, 0.30),
-                    transparent 25%
-                ),
-
-                radial-gradient(
-                    ellipse at 85% 80%,
-                    rgba(100, 55, 20, 0.15),
-                    transparent 28%
-                ),
-
-                radial-gradient(
-                    ellipse at 70% 15%,
-                    rgba(110, 65, 25, 0.10),
-                    transparent 22%
-                ),
-
-                repeating-linear-gradient(
-                    3deg,
-                    rgba(75, 40, 15, 0.035) 0px,
-                    rgba(75, 40, 15, 0.035) 1px,
-                    transparent 1px,
-                    transparent 5px
-                );
+            background: rgba(
+                232,
+                210,
+                164,
+                0.76
+            );
 
             border: 3px double #70403b;
 
             box-shadow:
 
                 0 10px 25px
-                rgba(50, 30, 20, 0.30),
+                rgba(50, 30, 20, 0.28),
 
                 inset 0 0 35px
-                rgba(80, 45, 20, 0.15);
+                rgba(80, 45, 20, 0.10);
 
         }
 
@@ -335,7 +225,7 @@
 
         /*
         ==========================================
-        SEÇÕES — PAPEL COM BORDAS QUEIMADAS
+        SEÇÕES
         ==========================================
         */
 
@@ -343,119 +233,7 @@
 
             padding: 55px 0;
 
-            border-top: 1px solid #806040;
-
-            background-color: #d8bd87;
-
-            background-image:
-
-                /*
-                BORDA ESQUERDA
-                */
-
-                radial-gradient(
-                    ellipse at 0% 8%,
-                    rgba(52, 27, 11, 0.62),
-                    transparent 17%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 28%,
-                    rgba(70, 36, 13, 0.40),
-                    transparent 14%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 52%,
-                    rgba(52, 27, 11, 0.52),
-                    transparent 15%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 76%,
-                    rgba(70, 36, 13, 0.43),
-                    transparent 14%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 96%,
-                    rgba(45, 23, 10, 0.62),
-                    transparent 17%
-                ),
-
-                /*
-                BORDA DIREITA
-                */
-
-                radial-gradient(
-                    ellipse at 100% 12%,
-                    rgba(52, 27, 11, 0.60),
-                    transparent 16%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 34%,
-                    rgba(70, 36, 13, 0.40),
-                    transparent 14%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 58%,
-                    rgba(52, 27, 11, 0.52),
-                    transparent 15%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 80%,
-                    rgba(70, 36, 13, 0.42),
-                    transparent 14%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 98%,
-                    rgba(45, 23, 10, 0.62),
-                    transparent 17%
-                ),
-
-                /*
-                MANCHAS INTERNAS
-                */
-
-                radial-gradient(
-                    ellipse at 13% 20%,
-                    rgba(100, 57, 20, 0.15),
-                    transparent 14%
-                ),
-
-                radial-gradient(
-                    ellipse at 87% 70%,
-                    rgba(90, 50, 17, 0.16),
-                    transparent 15%
-                ),
-
-                radial-gradient(
-                    ellipse at 55% 12%,
-                    rgba(255, 235, 185, 0.14),
-                    transparent 22%
-                ),
-
-                radial-gradient(
-                    ellipse at 40% 90%,
-                    rgba(85, 47, 15, 0.10),
-                    transparent 18%
-                ),
-
-                /*
-                FIBRAS
-                */
-
-                repeating-linear-gradient(
-                    8deg,
-                    rgba(70, 40, 15, 0.035) 0px,
-                    rgba(70, 40, 15, 0.035) 1px,
-                    transparent 1px,
-                    transparent 5px
-                );
+            background: transparent;
 
         }
 
@@ -500,29 +278,12 @@
 
             padding: 18px;
 
-            background-color: #dfc596;
-
-            background-image:
-
-                radial-gradient(
-                    ellipse at 15% 15%,
-                    rgba(255, 245, 210, 0.25),
-                    transparent 30%
-                ),
-
-                radial-gradient(
-                    ellipse at 90% 90%,
-                    rgba(100, 55, 20, 0.12),
-                    transparent 28%
-                ),
-
-                repeating-linear-gradient(
-                    5deg,
-                    rgba(70, 40, 15, 0.035) 0px,
-                    rgba(70, 40, 15, 0.035) 1px,
-                    transparent 1px,
-                    transparent 5px
-                );
+            background: rgba(
+                226,
+                202,
+                154,
+                0.78
+            );
 
             border: 1px solid #806040;
 
@@ -543,23 +304,12 @@
 
             margin: 8px 0;
 
-            background-color: #edddba;
-
-            background-image:
-
-                radial-gradient(
-                    ellipse at 80% 20%,
-                    rgba(255, 250, 220, 0.30),
-                    transparent 35%
-                ),
-
-                repeating-linear-gradient(
-                    4deg,
-                    rgba(70, 40, 15, 0.025) 0px,
-                    rgba(70, 40, 15, 0.025) 1px,
-                    transparent 1px,
-                    transparent 5px
-                );
+            background: rgba(
+                244,
+                229,
+                194,
+                0.78
+            );
 
             border-left: 4px solid #683944;
 
@@ -600,13 +350,14 @@
 
             border: 1px solid #806040;
 
-            background-color: #e1c99a;
+            background: rgba(
+                225,
+                201,
+                154,
+                0.80
+            );
 
             font-size: 15px;
-
-            box-shadow:
-                inset 0 0 8px
-                rgba(80, 45, 20, 0.08);
 
         }
 
@@ -625,7 +376,8 @@
 
             display: grid;
 
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns:
+                repeat(4, 1fr);
 
             gap: 8px;
 
@@ -638,13 +390,14 @@
 
             padding: 14px 5px;
 
-            background-color: #dfc596;
+            background: rgba(
+                225,
+                197,
+                150,
+                0.80
+            );
 
             border: 1px solid #806040;
-
-            box-shadow:
-                inset 0 0 12px
-                rgba(80, 45, 20, 0.08);
 
         }
 
@@ -703,27 +456,12 @@
 
             text-align: center;
 
-            background-color: #57313b;
-
-            background-image:
-
-                radial-gradient(
-                    ellipse at 50% 0%,
-                    rgba(150, 90, 90, 0.18),
-                    transparent 40%
-                ),
-
-                radial-gradient(
-                    ellipse at 0% 50%,
-                    rgba(30, 15, 10, 0.30),
-                    transparent 25%
-                ),
-
-                radial-gradient(
-                    ellipse at 100% 50%,
-                    rgba(30, 15, 10, 0.30),
-                    transparent 25%
-                );
+            background: rgba(
+                76,
+                42,
+                48,
+                0.92
+            );
 
             color: #ead7b0;
 
@@ -751,28 +489,47 @@
                 font-size: 41px;
             }
 
+
             h2 {
                 font-size: 27px;
             }
 
+
             .hero {
+
                 padding: 15px;
+
             }
+
 
             .hero-box {
-                padding: 38px 18px;
+
+                padding:
+                    38px 18px;
+
             }
+
 
             .text {
+
                 font-size: 15px;
+
             }
+
 
             section {
-                padding: 45px 0;
+
+                padding:
+                    45px 0;
+
             }
 
+
             #countdown {
-                grid-template-columns: repeat(2, 1fr);
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+
             }
 
         }
@@ -809,7 +566,8 @@
                 </h1>
 
                 <p class="subtitle">
-                    Uma noite de bruxaria, lendas e rituais proibidos.
+                    Uma noite de bruxaria,
+                    lendas e rituais proibidos.
                 </p>
 
                 <p class="date">
@@ -853,8 +611,9 @@
                 </p>
 
                 <p>
-                    Uma noite em que feiticeiros, alquimistas,
-                    caçadores e nobres caminham entre os vivos.
+                    Uma noite em que feiticeiros,
+                    alquimistas, caçadores e nobres
+                    caminham entre os vivos.
                 </p>
 
                 <p class="gold">
@@ -946,7 +705,7 @@
 
                     <br>
 
-                    Cada convidado deverá trazer suas próprias bebidas.
+                    Haverá um coquetel de boas vindas.
 
                 </div>
 
@@ -1035,7 +794,7 @@
 
                 <p>
                     <strong>
-                        A comida está inclusa no ingresso.
+                        Temático e está inclusa no ingresso.
                     </strong>
                 </p>
 
@@ -1122,7 +881,8 @@
 
 
             <p class="text">
-                Até que as portas do Coven sejam abertas...
+                Até que as portas do Coven
+                sejam abertas...
             </p>
 
         </div>
@@ -1145,7 +905,8 @@
             <div class="text">
 
                 <p>
-                    O Coven precisa saber quem estará presente.
+                    O Coven precisa saber
+                    quem estará presente.
                 </p>
 
                 <p class="gold">
@@ -1211,19 +972,28 @@
             var agora =
                 new Date().getTime();
 
+
             var distancia =
                 dataFesta - agora;
 
 
             if (distancia <= 0) {
 
-                document.getElementById("days").innerHTML = "00";
+                document.getElementById(
+                    "days"
+                ).innerHTML = "00";
 
-                document.getElementById("hours").innerHTML = "00";
+                document.getElementById(
+                    "hours"
+                ).innerHTML = "00";
 
-                document.getElementById("minutes").innerHTML = "00";
+                document.getElementById(
+                    "minutes"
+                ).innerHTML = "00";
 
-                document.getElementById("seconds").innerHTML = "00";
+                document.getElementById(
+                    "seconds"
+                ).innerHTML = "00";
 
                 return;
 
@@ -1239,8 +1009,10 @@
 
             var horas =
                 Math.floor(
-                    (distancia %
-                    (1000 * 60 * 60 * 24))
+                    (
+                        distancia %
+                        (1000 * 60 * 60 * 24)
+                    )
                     /
                     (1000 * 60 * 60)
                 );
@@ -1248,8 +1020,10 @@
 
             var minutos =
                 Math.floor(
-                    (distancia %
-                    (1000 * 60 * 60))
+                    (
+                        distancia %
+                        (1000 * 60 * 60)
+                    )
                     /
                     (1000 * 60)
                 );
@@ -1257,29 +1031,39 @@
 
             var segundos =
                 Math.floor(
-                    (distancia %
-                    (1000 * 60))
+                    (
+                        distancia %
+                        (1000 * 60)
+                    )
                     /
                     1000
                 );
 
 
-            document.getElementById("days").innerHTML =
-                dias;
+            document.getElementById(
+                "days"
+            ).innerHTML = dias;
 
-            document.getElementById("hours").innerHTML =
-                horas;
 
-            document.getElementById("minutes").innerHTML =
-                minutos;
+            document.getElementById(
+                "hours"
+            ).innerHTML = horas;
 
-            document.getElementById("seconds").innerHTML =
-                segundos;
+
+            document.getElementById(
+                "minutes"
+            ).innerHTML = minutos;
+
+
+            document.getElementById(
+                "seconds"
+            ).innerHTML = segundos;
 
         }
 
 
         contador();
+
 
         setInterval(
             contador,
