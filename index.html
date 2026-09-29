@@ -1,179 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>O Coven Medieval — III Halloween da Fêh</title>
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>III Halloween da Fêh</title>
 
 <style>
 
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    background:
-        radial-gradient(circle at 20% 10%, rgba(126, 75, 45, .18), transparent 30%),
-        radial-gradient(circle at 80% 90%, rgba(78, 38, 73, .20), transparent 35%),
-        #e7d2aa;
+    background-color: #e7d2aa;
 
     color: #35251d;
 
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+    font-family: Georgia, "Times New Roman", serif;
 
-    line-height: 1.7;
+    text-align: center;
 }
-
-
-/* =========================
-   FUNDO DE PERGAMINHO
-========================= */
-
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-
-    pointer-events: none;
-
-    background:
-        repeating-linear-gradient(
-            0deg,
-            rgba(80, 50, 25, .025),
-            rgba(80, 50, 25, .025) 2px,
-            transparent 2px,
-            transparent 5px
-        );
-
-    z-index: 10;
-}
-
-
-/* =========================
-   CONTAINER
-========================= */
 
 .container {
     width: 90%;
-    max-width: 850px;
-    margin: auto;
+    max-width: 800px;
+
+    margin: 0 auto;
 }
 
-
-/* =========================
-   SEÇÕES
-========================= */
-
-section {
-    padding: 75px 0;
-    position: relative;
-}
-
-
-/* =========================
-   ABERTURA
-========================= */
-
-.hero {
+header {
     min-height: 100vh;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
-
-    text-align: center;
-
-    background:
-        linear-gradient(
-            rgba(231, 210, 170, .82),
-            rgba(231, 210, 170, .92)
-        );
-
-    border-bottom:
-        8px double #6b3b38;
 }
 
-.hero-content {
-    padding: 45px 25px;
+.box {
+    padding: 40px;
 
-    border:
-        2px solid #765039;
+    border: 2px solid #6b3b38;
 
-    outline:
-        1px solid #765039;
-
-    outline-offset: 8px;
-
-    box-shadow:
-        0 0 30px rgba(80, 45, 25, .20);
+    background-color: #ead9b8;
 }
-
-
-.symbol {
-    font-size: 48px;
-    color: #592d4e;
-
-    margin-bottom: 15px;
-}
-
-
-.edition {
-    font-size: 13px;
-
-    letter-spacing: 5px;
-
-    text-transform: uppercase;
-
-    color: #79502d;
-
-    margin-bottom: 20px;
-}
-
 
 h1 {
-    font-size: clamp(42px, 9vw, 76px);
-
-    font-weight: normal;
-
-    line-height: 1.05;
-
     color: #542d48;
 
-    margin-bottom: 25px;
+    font-size: 48px;
+
+    margin: 20px 0;
 }
 
+h2 {
+    color: #592d4e;
 
-.subtitle {
-    font-size: 19px;
-
-    font-style: italic;
-
-    color: #50372d;
-
-    max-width: 650px;
-
-    margin: auto;
+    font-size: 32px;
 }
 
+p {
+    color: #35251d;
 
-.date {
-    margin-top: 35px;
+    font-size: 18px;
 
-    font-size: 19px;
-
-    letter-spacing: 2px;
+    line-height: 1.7;
 }
-
 
 .gold {
     color: #765024;
@@ -181,133 +78,279 @@ h1 {
     font-weight: bold;
 }
 
+section {
+    padding: 70px 0;
 
-/* =========================
-   TÍTULOS
-========================= */
-
-h2 {
-    text-align: center;
-
-    font-size: 34px;
-
-    font-weight: normal;
-
-    color: #592d4e;
-
-    margin-bottom: 35px;
+    border-top: 1px solid #806043;
 }
-
-h2::before {
-    content: "☾  ✦  ☽";
-
-    display: block;
-
-    font-size: 20px;
-
-    color: #79502d;
-
-    margin-bottom: 10px;
-}
-
-
-/* =========================
-   TEXTO
-========================= */
-
-.text {
-    max-width: 700px;
-
-    margin: auto;
-
-    text-align: center;
-
-    font-size: 17px;
-}
-
-
-/* =========================
-   CARDS
-========================= */
-
-.card {
-    max-width: 700px;
-
-    margin: 30px auto 0;
-
-    padding: 30px;
-
-    background:
-        rgba(255, 247, 226, .55);
-
-    border:
-        1px solid #8b6745;
-
-    box-shadow:
-        0 8px 20px rgba(70, 40, 20, .12);
-}
-
-
-/* =========================
-   INFORMAÇÕES
-========================= */
 
 .info {
-    display: grid;
+    padding: 20px;
 
-    gap: 15px;
+    margin: 15px 0;
+
+    background-color: #f1e4c8;
+
+    border-left: 4px solid #6b3b38;
 }
 
+footer {
+    padding: 50px 20px;
 
-.info div {
-    padding: 18px;
+    background-color: #5a303d;
 
-    background:
-        rgba(255, 250, 235, .55);
-
-    border-left:
-        4px solid #6b3b38;
+    color: #ead7b0;
 }
 
-
-.info strong {
-    color: #592d4e;
+footer p {
+    color: #ead7b0;
 }
 
+@media (max-width: 600px) {
 
-/* =========================
-   DRESS CODE
-========================= */
+    h1 {
+        font-size: 38px;
+    }
 
-.dress-code {
-    max-width: 700px;
+    h2 {
+        font-size: 27px;
+    }
 
-    margin: 35px auto 0;
+    p {
+        font-size: 16px;
+    }
 
-    text-align: center;
+    .box {
+        padding: 25px 15px;
+    }
+
 }
 
+</style>
 
-.dress-code span {
-    display: inline-block;
-
-    margin: 6px;
-
-    padding: 9px 15px;
-
-    border:
-        1px solid #806043;
-
-    background:
-        rgba(255, 247, 226, .45);
-
-    color: #50352c;
-}
+</head>
 
 
-/* =========================
-   REGRAS
-========================= */
+<body>
 
-.rules {
-    ma
+
+<header>
+
+<div class="container">
+
+<div class="box">
+
+<p class="gold">
+☽ ✦ ☾
+</p>
+
+<p>
+III HALLOWEEN DA FÊH
+</p>
+
+<h1>
+O Coven Medieval
+</h1>
+
+<p>
+Uma noite de bruxaria, lendas e rituais proibidos.
+</p>
+
+<p class="gold">
+07 de novembro de 2026
+</p>
+
+<p>
+19h às 00h
+</p>
+
+</div>
+
+</div>
+
+</header>
+
+
+<section>
+
+<div class="container">
+
+<h2>
+O Chamado
+</h2>
+
+<p>
+Há uma noite em que as portas se abrem,
+os antigos rituais despertam e as bruxas
+deixam a floresta.
+</p>
+
+<p>
+Uma noite em que feiticeiros, alquimistas,
+caçadores e criaturas caminham entre os vivos.
+</p>
+
+<p class="gold">
+O Coven está reunido.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>
+O Ritual
+</h2>
+
+<div class="info">
+
+<p>
+<strong>☾ DATA</strong>
+</p>
+
+<p>
+07 de novembro de 2026
+</p>
+
+</div>
+
+
+<div class="info">
+
+<p>
+<strong>⌛ HORÁRIO</strong>
+</p>
+
+<p>
+19h às 00h
+</p>
+
+</div>
+
+
+<div class="info">
+
+<p>
+<strong>✦ LOCAL</strong>
+</p>
+
+<p>
+Residencial Soft São Luís, 155
+<br>
+Salão 2
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>
+O Coven
+</h2>
+
+<p>
+Escolha sua forma.
+</p>
+
+<p>
+Vista sua personagem.
+</p>
+
+<p>
+Entre no Coven.
+</p>
+
+<p class="gold">
+🧙 Bruxas
+<br>
+🔮 Feiticeiros
+<br>
+⚗️ Alquimistas
+<br>
+🏹 Caçadores
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>
+O Banquete
+</h2>
+
+<p>
+🍽️ A comida está inclusa no ingresso.
+</p>
+
+<p>
+Cada convidado deverá trazer
+suas próprias bebidas.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<h2>
+Você Aceitará o Chamado?
+</h2>
+
+<p>
+O Coven precisa saber quem estará presente.
+</p>
+
+<p class="gold">
+Confirmação até 10/10/2026.
+</p>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<p>
+☽ ✦ ☾
+</p>
+
+<p>
+III Halloween da Fêh
+</p>
+
+<p>
+O Coven Medieval
+</p>
+
+<p>
+A magia começa às 19h.
+</p>
+
+</footer>
+
+
+</body>
+
+</html>
