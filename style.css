@@ -8,8 +8,9 @@ body{margin:0;background:#17100f;
  pointer-events:none;
  opacity:.08;
  background:radial-gradient(circle at 20% 30%,#fff 0,transparent 25%),
-   radial-gradient(circle at 80% 70%,#fff 0,
-                   transparent 25%);filter:blur(45px);animation:mist 15s ease-in-out infinite alternate;
+   radial-gradient(circle at 80% 70%,#fff 0,transparent 25%);
+ filter:blur(45px);
+ animation:mist 15s ease-in-out infinite alternate;
  z-index:2}.hero
 {min-height:100vh;
  display:flex;
@@ -28,9 +29,9 @@ hero:after{content:"";position:absolute;
  margin-bottom:20px;z-index:3}.eyebrow{font:600 11px "Cinzel",serif;
                                        letter-spacing:.2em;color:#c9a96b;text-transform:uppercase}.
 hero h1{font:700 clamp(50px,13vw,100px)/.9 "Cinzel",serif;margin:15px 0;text-shadow:0 4px 18px #000;z-index:3}.
-hero h1 span{color:#bd8d69;font-style:italic}.subtitle{font-style:italic;max-width:600px;z-index:3}.ornament{color:#bd9b5f;
-                                                                                                             letter-spacing:.45em;margin:20px}.date{font:600 15px "Cinzel",serif;letter-spacing:.16em}.seal-button{display:inline-block;margin-top:22px;padding:13px 23px;border:1px solid #c8a567;
-                                                                                                                                                                                                                                 background:#261714;color:#eadbbd;text-decoration:none;font:600 11px "Cinzel",serif;
+hero h1 span{color:#bd8d69;font-style:italic}.subtitle{font-style:italic;max-width:600px;z-index:3}.ornament{color:#bd9b5f;    
+letter-spacing:.45em;margin:20px}.date{font:600 15px "Cinzel",serif;letter-spacing:.16em}.seal-button{display:inline-block;margin-top:22px;padding:13px 23px;border:1px solid #c8a567;
+                                                                                                                                                                                                                            background:#261714;color:#eadbbd;text-decoration:none;font:600 11px "Cinzel",serif;
                                                                                                                                                                                                                                  letter-spacing:.14em;transition:.25s;
                                                                                                                                                                                                                                  position:relative;z-index:3}.seal-button:hover
 {background:#4b2924;transform:translateY(-2px)}main{max-width:1000px;margin:auto;padding:55px 20px}.parchment
