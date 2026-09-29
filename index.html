@@ -9,12 +9,16 @@
 
     <style>
 
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
-            background: #e6d0a5;
+            background-color: #b99b68;
             color: #35251d;
             font-family: Georgia, "Times New Roman", serif;
-            line-height: 1.7;
+            line-height: 1.45;
         }
 
         .container {
@@ -23,7 +27,10 @@
             margin: 0 auto;
         }
 
-        /* CAPA */
+
+        /* =========================
+           CAPA
+        ========================= */
 
         .hero {
             min-height: 100vh;
@@ -31,58 +38,63 @@
             align-items: center;
             justify-content: center;
             text-align: center;
-            padding: 20px;
-            box-sizing: border-box;
+            padding: 25px;
+            background-color: #cdb27e;
         }
 
         .hero-box {
             width: 100%;
-            padding: 50px 25px;
-            box-sizing: border-box;
-            background: #ead9b8;
+            padding: 45px 25px;
+            background-color: #e7d3a5;
             border: 3px double #70403b;
-            box-shadow: 0 10px 30px rgba(50, 30, 20, 0.2);
+            box-shadow:
+                0 8px 20px rgba(50, 30, 20, 0.25);
         }
 
         .symbol {
             color: #62364f;
-            font-size: 40px;
-            letter-spacing: 8px;
+            font-size: 38px;
+            letter-spacing: 7px;
+            line-height: 1;
         }
 
         .edition {
             color: #704b2c;
-            font-size: 13px;
-            letter-spacing: 4px;
+            font-size: 12px;
+            letter-spacing: 3px;
             text-transform: uppercase;
+            margin-top: 12px;
         }
 
         h1 {
             color: #542c49;
-            font-size: 55px;
+            font-size: 54px;
             font-weight: normal;
-            line-height: 1.1;
-            margin: 20px 0;
+            line-height: 1.05;
+            margin: 16px 0;
         }
 
         h2 {
             color: #5c304e;
             text-align: center;
-            font-size: 32px;
+            font-size: 31px;
             font-weight: normal;
-            margin-bottom: 30px;
+            line-height: 1.1;
+            margin: 0 0 22px 0;
         }
 
         .subtitle {
-            font-size: 18px;
+            font-size: 17px;
             font-style: italic;
+            margin: 10px 0;
         }
 
         .date {
             color: #704b2c;
-            font-size: 19px;
+            font-size: 18px;
             font-weight: bold;
-            margin-top: 30px;
+            margin: 20px 0 10px 0;
+            line-height: 1.4;
         }
 
         .gold {
@@ -90,10 +102,13 @@
             font-weight: bold;
         }
 
-        /* SEÇÕES */
+
+        /* =========================
+           SEÇÕES
+        ========================= */
 
         section {
-            padding: 70px 0;
+            padding: 55px 0;
             border-top: 1px solid #806040;
         }
 
@@ -101,118 +116,146 @@
             max-width: 700px;
             margin: 0 auto;
             text-align: center;
-            font-size: 17px;
+            font-size: 16px;
         }
 
-        /* CARDS */
+        .text p {
+            margin: 8px 0;
+        }
+
+
+        /* =========================
+           CARDS
+        ========================= */
 
         .card {
             max-width: 700px;
-            margin: 25px auto;
-            padding: 25px;
-            box-sizing: border-box;
-            background: #f1e4c8;
+            margin: 20px auto;
+            padding: 18px;
+            background-color: #e5d0a1;
             border: 1px solid #806040;
+            box-shadow:
+                0 4px 12px rgba(50, 30, 20, 0.12);
         }
 
         .info {
-            padding: 15px;
-            margin: 12px 0;
-            background: #f8eed8;
+            padding: 12px 14px;
+            margin: 8px 0;
+            background-color: #f0e1bd;
             border-left: 4px solid #683944;
+            line-height: 1.4;
         }
 
         .info strong {
             color: #5c304e;
         }
 
-        /* DRESS CODE */
+
+        /* =========================
+           DRESS CODE
+        ========================= */
 
         .dress {
             text-align: center;
-            margin-top: 30px;
+            margin-top: 22px;
         }
 
         .dress span {
             display: inline-block;
-            padding: 8px 14px;
-            margin: 5px;
+            padding: 7px 12px;
+            margin: 4px;
             border: 1px solid #806040;
-            background: #f1e4c8;
+            background-color: #e5d0a1;
+            font-size: 15px;
         }
 
-        /* REGRAS */
 
-        .rule {
-            max-width: 700px;
-            margin: 15px auto;
-            padding: 15px;
-            box-sizing: border-box;
-            background: #f1e4c8;
-            border-left: 3px solid #683944;
-        }
-
-        /* CONTADOR */
+        /* =========================
+           CONTADOR
+        ========================= */
 
         #countdown {
             max-width: 700px;
-            margin: 30px auto;
+            margin: 22px auto;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
+            gap: 8px;
         }
 
         .time {
             text-align: center;
-            padding: 18px 5px;
-            background: #f1e4c8;
+            padding: 14px 5px;
+            background-color: #e5d0a1;
             border: 1px solid #806040;
         }
 
         .time strong {
             display: block;
             color: #5c304e;
-            font-size: 28px;
+            font-size: 26px;
+            line-height: 1.1;
         }
 
-        /* BOTÃO */
+
+        /* =========================
+           BOTÃO
+        ========================= */
 
         .button {
             display: inline-block;
-            margin-top: 25px;
-            padding: 14px 25px;
-            background: #5c304e;
+            margin-top: 20px;
+            padding: 13px 23px;
+            background-color: #5c304e;
             color: #f3dfb8;
             text-decoration: none;
         }
 
-        /* RODAPÉ */
+
+        /* =========================
+           RODAPÉ
+        ========================= */
 
         footer {
-            padding: 50px 20px;
+            padding: 40px 20px;
             text-align: center;
-            background: #5a303d;
+            background-color: #5a303d;
             color: #ead7b0;
         }
 
         footer p {
             color: #ead7b0;
+            margin: 5px 0;
         }
 
-        /* CELULAR */
+
+        /* =========================
+           CELULAR
+        ========================= */
 
         @media (max-width: 600px) {
 
             h1 {
-                font-size: 42px;
+                font-size: 41px;
             }
 
             h2 {
-                font-size: 28px;
+                font-size: 27px;
+            }
+
+            .hero {
+                padding: 15px;
+            }
+
+            .hero-box {
+                padding: 38px 18px;
             }
 
             .text {
-                font-size: 16px;
+                font-size: 15px;
+            }
+
+            section {
+                padding: 45px 0;
             }
 
             #countdown {
@@ -227,7 +270,10 @@
 
 <body>
 
-    <!-- CAPA -->
+
+    <!-- =========================
+         CAPA
+    ========================= -->
 
     <section class="hero">
 
@@ -272,7 +318,9 @@
     </section>
 
 
-    <!-- O CHAMADO -->
+    <!-- =========================
+         O CHAMADO
+    ========================= -->
 
     <section>
 
@@ -306,7 +354,9 @@
     </section>
 
 
-    <!-- O RITUAL -->
+    <!-- =========================
+         O RITUAL
+    ========================= -->
 
     <section>
 
@@ -320,9 +370,7 @@
 
                 <div class="info">
 
-                    <strong>
-                        ☾ DATA
-                    </strong>
+                    <strong>☾ DATA</strong>
 
                     <br>
 
@@ -333,9 +381,7 @@
 
                 <div class="info">
 
-                    <strong>
-                        ⌛ HORÁRIO
-                    </strong>
+                    <strong>⌛ HORÁRIO</strong>
 
                     <br>
 
@@ -346,9 +392,7 @@
 
                 <div class="info">
 
-                    <strong>
-                        ✦ LOCAL
-                    </strong>
+                    <strong>✦ LOCAL</strong>
 
                     <br>
 
@@ -363,9 +407,7 @@
 
                 <div class="info">
 
-                    <strong>
-                        🍽️ BANQUETE
-                    </strong>
+                    <strong>🍽️ BANQUETE</strong>
 
                     <br>
 
@@ -376,9 +418,7 @@
 
                 <div class="info">
 
-                    <strong>
-                        🥂 BEBIDAS
-                    </strong>
+                    <strong>🥂 BEBIDAS</strong>
 
                     <br>
 
@@ -393,7 +433,9 @@
     </section>
 
 
-    <!-- O COVEN -->
+    <!-- =========================
+         O COVEN
+    ========================= -->
 
     <section>
 
@@ -422,25 +464,15 @@
 
             <div class="dress">
 
-                <span>
-                    🧙 Bruxas
-                </span>
+                <span>🧙 Bruxas</span>
 
-                <span>
-                    🔮 Feiticeiros
-                </span>
+                <span>🔮 Feiticeiros</span>
 
-                <span>
-                    ⚗️ Alquimistas
-                </span>
+                <span>⚗️ Alquimistas</span>
 
-                <span>
-                    🏹 Caçadores
-                </span>
+                <span>🏹 Caçadores</span>
 
-                <span>
-                    👑 Nobres
-                </span>
+                <span>👑 Nobres</span>
 
             </div>
 
@@ -449,7 +481,9 @@
     </section>
 
 
-    <!-- O BANQUETE -->
+    <!-- =========================
+         O BANQUETE
+    ========================= -->
 
     <section>
 
@@ -484,7 +518,9 @@
     </section>
 
 
-    <!-- CONTAGEM REGRESSIVA -->
+    <!-- =========================
+         CONTAGEM REGRESSIVA
+    ========================= -->
 
     <section>
 
@@ -494,57 +530,40 @@
                 O Tempo Está Correndo
             </h2>
 
-
             <div id="countdown">
 
                 <div class="time">
 
-                    <strong id="days">
-                        00
-                    </strong>
+                    <strong id="days">00</strong>
 
-                    <small>
-                        dias
-                    </small>
+                    <small>dias</small>
 
                 </div>
 
 
                 <div class="time">
 
-                    <strong id="hours">
-                        00
-                    </strong>
+                    <strong id="hours">00</strong>
 
-                    <small>
-                        horas
-                    </small>
+                    <small>horas</small>
 
                 </div>
 
 
                 <div class="time">
 
-                    <strong id="minutes">
-                        00
-                    </strong>
+                    <strong id="minutes">00</strong>
 
-                    <small>
-                        minutos
-                    </small>
+                    <small>minutos</small>
 
                 </div>
 
 
                 <div class="time">
 
-                    <strong id="seconds">
-                        00
-                    </strong>
+                    <strong id="seconds">00</strong>
 
-                    <small>
-                        segundos
-                    </small>
+                    <small>segundos</small>
 
                 </div>
 
@@ -552,9 +571,7 @@
 
 
             <p class="text">
-
                 Até que as portas do Coven sejam abertas...
-
             </p>
 
         </div>
@@ -562,7 +579,9 @@
     </section>
 
 
-    <!-- CONFIRMAÇÃO -->
+    <!-- =========================
+         CONFIRMAÇÃO
+    ========================= -->
 
     <section>
 
@@ -582,9 +601,7 @@
                     Confirmação até 10/10/2026.
                 </p>
 
-                <a
-                    href="#"
-                    class="button">
+                <a href="#" class="button">
                     ✦ Confirmar Presença ✦
                 </a>
 
@@ -595,7 +612,9 @@
     </section>
 
 
-    <!-- RODAPÉ -->
+    <!-- =========================
+         RODAPÉ
+    ========================= -->
 
     <footer>
 
@@ -620,7 +639,9 @@
     </footer>
 
 
-    <!-- CONTADOR -->
+    <!-- =========================
+         CONTADOR
+    ========================= -->
 
     <script>
 
@@ -645,7 +666,6 @@
                 document.getElementById("seconds").innerHTML = "00";
 
                 return;
-
             }
 
 
@@ -683,17 +703,13 @@
                 );
 
 
-            document.getElementById("days").innerHTML =
-                dias;
+            document.getElementById("days").innerHTML = dias;
 
-            document.getElementById("hours").innerHTML =
-                horas;
+            document.getElementById("hours").innerHTML = horas;
 
-            document.getElementById("minutes").innerHTML =
-                minutos;
+            document.getElementById("minutes").innerHTML = minutos;
 
-            document.getElementById("seconds").innerHTML =
-                segundos;
+            document.getElementById("seconds").innerHTML = segundos;
 
         }
 
@@ -703,6 +719,7 @@
         setInterval(contador, 1000);
 
     </script>
+
 
 </body>
 
