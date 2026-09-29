@@ -1,74 +1,185 @@
-✦
-3ª EDIÇÃO DO HALLOWEEN DA FÊH
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-O Coven
-Medieval
-Uma noite de bruxaria, lendas e rituais proibidos
+    <title>O Coven Medieval — Halloween da Fêh</title>
 
-☽ ✦ ☾
-07 · NOVEMBRO · 2026
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-19h — 00h
+        body {
+            background: #120d13;
+            color: #e8dcc8;
+            font-family: Georgia, "Times New Roman", serif;
+            line-height: 1.7;
+        }
 
-ENTRAR NO COVEN
-S
+        .container {
+            width: 90%;
+            max-width: 850px;
+            margin: auto;
+        }
 
-As portas do Coven estão prestes a se abrir. Você foi convocado(a) para uma noite de mistérios, magia e criaturas que raramente deixam seus esconderijos.
+        section {
+            padding: 70px 0;
+            border-bottom: 1px solid rgba(232, 220, 200, 0.15);
+        }
 
-Vista sua melhor identidade fantástica e venha celebrar conosco.
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background:
+                radial-gradient(circle at center,
+                rgba(82, 40, 92, 0.35),
+                transparent 55%),
+                #120d13;
+        }
 
-🕯
-O Ritual
-07 de novembro de 2026
-Das 19h às 00h
+        .symbol {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
 
-📍
-O Coven
-Residencial Soft São Luís, 155
-Salão 2
+        .edition {
+            font-size: 14px;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            color: #b99a61;
+            margin-bottom: 20px;
+        }
 
-Abrir localização ↗
-🍽
-O Banquete
-A comida está inclusa no ingresso.
+        h1 {
+            font-size: clamp(38px, 8vw, 72px);
+            font-weight: normal;
+            color: #d8c19a;
+            margin-bottom: 20px;
+        }
 
-🍷
-As Poções
-Cada convidado deve trazer suas próprias bebidas.
+        h2 {
+            font-size: 30px;
+            font-weight: normal;
+            color: #d8c19a;
+            margin-bottom: 25px;
+        }
 
-Mas haverá um coquetel especial de boas-vindas.
+        .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            color: #c7b7a0;
+            max-width: 650px;
+            margin: auto;
+        }
 
-O CÓDIGO DO COVEN
+        .date {
+            margin-top: 35px;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
 
-Escolha sua forma
-Bruxas · Feiticeiros · Alquimistas · Caçadores · Nobres · Criaturas da Floresta
+        .gold {
+            color: #b99a61;
+        }
 
-A fantasia é parte do ritual. Solte a imaginação e entre no personagem.
+        .text {
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            font-size: 17px;
+        }
 
-ANTES DE ATRAVESSAR O PORTAL
+        .card {
+            border: 1px solid rgba(185, 154, 97, 0.45);
+            padding: 30px;
+            margin-top: 30px;
+            background: rgba(255,255,255,0.025);
+        }
 
-As leis do Coven
-01. Esta é uma festa privada.
+        .info {
+            display: grid;
+            gap: 15px;
+            margin-top: 30px;
+        }
 
-02. O acesso será permitido somente aos nomes presentes na lista de presença.
+        .info div {
+            padding: 18px;
+            border-left: 2px solid #b99a61;
+            background: rgba(255,255,255,0.025);
+        }
 
-03. A confirmação deverá ser feita até 10/10/2026.
+        .dress-code {
+            margin-top: 30px;
+            font-size: 18px;
+        }
 
-04. A comida está inclusa no ingresso. As bebidas são por conta de cada convidado.
+        .dress-code span {
+            display: inline-block;
+            margin: 6px;
+            padding: 8px 14px;
+            border: 1px solid rgba(185,154,97,0.5);
+        }
 
-O ORÁCULO AGUARDA
+        .rules {
+            list-style: none;
+            margin-top: 25px;
+        }
 
-Você aceitará o chamado?
-Confirme sua presença até 10 de outubro de 2026.
+        .rules li {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
 
-ACEITAR O CHAMADO
-O formulário será conectado a este botão quando estiver pronto.
+        .rules li::before {
+            content: "✦";
+            color: #b99a61;
+            margin-right: 10px;
+        }
 
-A CONTAGEM PARA O RITUAL
+        #countdown {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            margin-top: 35px;
+        }
 
--- : -- : -- : --
-diashorasminutossegundos
-☽ ✦ ☾
-Halloween da Fêh · O Coven Medieval
+        .time-box {
+            padding: 20px 10px;
+            border: 1px solid rgba(185,154,97,0.4);
+        }
 
-Que as antigas lendas guiem seus passos.
+        .time-box strong {
+            display: block;
+            font-size: 30px;
+            color: #d8c19a;
+        }
+
+        .time-box small {
+            color: #a99b88;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 14px 28px;
+            border: 1px solid #b99a61;
+            color: #d8c19a;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .button:hover {
+            background: #b99a61;
+            color: #120d13;
+        }
+
+        footer {
+            text-align: center;
+            paddin
